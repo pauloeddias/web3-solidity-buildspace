@@ -25,13 +25,6 @@ const main = async () => {
   
     waveCount = await waveContract.getTotalWaves();
 
-    //getWavesByAddress
-    let waves = await waveContract.getWavesByAddress(owner.address);
-    console.log("Waves by %s: %d", owner.address, waves);
-    
-    waves = await waveContract.getWavesByAddress(randomPerson.address);
-    console.log("Waves by %s: %d", randomPerson.address, waves);
-
 
   };
   
